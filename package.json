@@ -1,0 +1,11 @@
+{
+  "name": "a0-tunnel",
+  "version": "1.0.0",
+  "description": "Secure SSH tunnel for local development",
+  "main": "index.js",
+  "bin": {
+    "a0-tunnel": "index.js"
+  },
+  "author": "Fady Abdelmalik <fady@auth0.com>",
+  "license": "MIT"
+}
