@@ -1,4 +1,4 @@
-# a0-tunnel
+# wormhole
 
 A simple package for establishing an SSH tunnel for local development
 
