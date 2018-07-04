@@ -5,15 +5,15 @@ A simple package for establishing an SSH tunnel for local development
 ## Usage
 
 Set the environment variables:
-  - `A0_TUNNEL_REMOTE_HOST` - the remote host you are connecting to
-  - `A0_TUNNEL_REMOTE_PORT` - the remote port assigned to you by the host
+  - `WORMHOLE_REMOTE_HOST` - the remote host you are connecting to
+  - `WORMHOLE_REMOTE_PORT` - the remote port assigned to you by the host
 
 Import the module establish a connection exposing port `3000`:
 
 ```js
-const a0Tunnel = require('a0-tunnel')
+const wormhole = require('wormhole')
 
-a0Tunnel.connect(3000, (err, url) => {
+wormhole.connect(3000, (err, url) => {
   if (err) {
     throw err
   }
@@ -27,7 +27,7 @@ a0Tunnel.connect(3000, (err, url) => {
 This module can also be used via the CLI, like so:
 
 ```bash
-A0_TUNNEL_REMOTE_HOST='...' \
-A0_TUNNEL_REMOTE_PORT=... \
-a0-tunnel 3000
+WORMHOLE_REMOTE_HOST='...' \
+WORMHOLE_REMOTE_PORT=... \
+wormhole 3000
 ```
