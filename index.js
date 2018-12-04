@@ -4,6 +4,10 @@ const wormhole = require('./lib')
 
 if (require.main === module) {
   const port = process.argv[2]
+  
+  if (!port) {
+    return console.log('A valid local port must be specified')
+  }
 
   wormhole.connect(port, (err, url) => {
     if (err) {
